@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Iceblade Sorcerer Shall Rule the World</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+
+	<style>
+		body {
+			background-color: #131313;
+			background-image: url("hintergrundbild.jpg");
+			background-size: cover;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+			font-family: 'Montserrat', sans-serif;
+		}
+		
+		.my-button {
+			width: 300px;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 22px;
+			padding: 10px 24px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			margin: 5px;
+		}
+		
+		.my-button:hover {
+			background-color: #3e8e41;
+		}
+		
+		#video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
+		
+		#video-container iframe,  
+		#video-container object,  
+		#video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		
+		#video-description {
+			font-size: 35px;
+			color: white;
+			margin: 20px 0;
+		}
+	</style>
+
+
+        <button onclick="toggleDescription()">Beschreibung anzeigen/verstecken</button>
+        <div id="video-description" style="display: none;">
+            <p>Die Arnold-Akademie für Magie ist eine Schule für die Elite … und Ray White ist ein stinknormaler Typ. In der Tat scheint er nicht besonders geschickt im Umgang mit der Magie zu sein und zudem ist er ein kleiner Tollpatsch. Deshalb hat er auch nichts mit dem Gerücht zu tun, dass einer der Großen Magier, der Iceblade Sorcerer, ein Mitglied seiner neuen Klasse ist … oder?</p>
+        </div>
+
+
+
+</head>
+<body>
+	<h1>Ice Blade Anime</h1>
+	<p>Wählen Sie eine Option aus:</p>
+	<button class="my-button" onclick="playVideo('https:vidoza.net/embed-ns55zvdsh6c7.html')">Folge 1</button>
+	<button class="my-button" onclick="playVideo('https:vidoza.net/embed-255lsn777hqi.html')">Folge 2</button>
+	<button class="my-button" onclick="playVideo('https://vidoza.net/embed-hignwgt6zgj0.html')">Folge 3</button>
+	<button class="my-button" onclick="playVideo('https://vidoza.net/embed-h42lopszv4hk.html')">Folge 4</button>
+	<button class="my-button" onclick="playVideo('https://vidoza.net/embed-4zee2q6lppu6.html')">Folge 5</button>
+	<button class="my-button" onclick="playVideo('https://vidoza.net/embed-2kksglvb8kdt.html')">Folge 6</button>
+    <button class="my-button" onclick="playVideo('https://vidoza.net/embed-4h54umclcgr6.html')">Folge 7</button>
+    <button class="my-button" onclick="playVideo('https://vidoza.net/embed-26fiyl99arr9.html')">Folge 8</button>
+    <button class="my-button" onclick="playVideo('https://vidoza.net/embed-t7oahjug740d.html')">Folge 9</button>
+    <button class="my-button" onclick="playVideo('https://vidoza.net/embed-uq9uiq8dkwfa.html')">Folge 10</button>
+    <button class="my-button" onclick="playVideo('https://vidoza.net/embed-b76qyrhb2qmf.html')">Folge 11</button>
+    <button class="my-button" onclick="playVideo('https://vidoza.net/embed-bg94gjekrg3x.html')">Folge 12</button>
+
+    <div id="video-container">
+		<!-- Hier wird das Video eingebettet --> 
+	</div>
+
+	<script>
+		// Funktion zum Einbetten eines YouTube-Videos in das Video-Container-Element
+		function playVideo(embedUrl) {
+			var videoContainer = document.getElementById("video-container");
+			videoContainer.innerHTML = '<iframe width="560" height="315" src="' + embedUrl + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+		}
+
+
+        function toggleDescription() {
+        var x = document.getElementById("video-description");
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        } else {
+        x.style.display = "none";
+        }
+        }
+
+        
+
+	</script>
+</body>
+</html>
